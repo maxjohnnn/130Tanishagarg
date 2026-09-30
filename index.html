@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<meta name="theme-color" content="#0b84d8">
+
+<title>Stock Market Community</title>
+
+<meta name="description"
+content="Join our stock market Telegram community.">
+
+
+<!-- =========================
+     META PIXEL
+     Replace YOUR_PIXEL_ID
+========================= -->
+
+<script>
+!function(f,b,e,v,n,t,s)
+{
+if(f.fbq)return;
+
+n=f.fbq=function()
+{
+n.callMethod ?
+n.callMethod.apply(n,arguments) :
+n.queue.push(arguments)
+};
+
+if(!f._fbq)f._fbq=n;
+
+n.push=n;
+n.loaded=!0;
+n.version='2.0';
+n.queue=[];
+
+t=b.createElement(e);
+t.async=!0;
+t.src=v;
+
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s);
+
+}
+(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init','YOUR_PIXEL_ID');
+fbq('track','PageView');
+</script>
+
+
+<style>
+
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    -webkit-text-size-adjust:100%;
+}
+
+body{
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:#f4f7fa;
+
+    color:#17212b;
+
+    min-height:100vh;
+
+    -webkit-font-smoothing:antialiased;
+}
+
+
+/* =========================
+   PAGE
+========================= */
+
+.page{
+    width:100%;
+    max-width:480px;
+
+    min-height:100vh;
+
+    margin:0 auto;
+
+    background:#ffffff;
+
+    display:flex;
+    flex-direction:column;
+}
+
+
+/* =========================
+   TOP
+========================= */
+
+.top{
+    background:
+        linear-gradient(
+            135deg,
+            #087fc4,
+            #0b92df
+        );
+
+    padding:
+        18px
+        18px
+        65px;
+
+    text-align:center;
+
+    color:#ffffff;
+}
+
+
+/* small brand */
+
+.brand{
+    font-size:12px;
+
+    font-weight:800;
+
+    letter-spacing:.8px;
+
+    opacity:.9;
+
+    margin-bottom:28px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero-title{
+    font-size:31px;
+
+    line-height:1.12;
+
+    letter-spacing:-.8px;
+
+    margin-bottom:10px;
+
+    font-weight:800;
+}
+
+.hero-title span{
+    color:#d9fff2;
+}
+
+.hero-text{
+    max-width:350px;
+
+    margin:auto;
+
+    font-size:14px;
+
+    line-height:1.55;
+
+    color:#e4f5ff;
+}
+
+
+/* =========================
+   MAIN CARD
+========================= */
+
+.card{
+    width:
+        calc(100% - 28px);
+
+    margin:
+        -40px
+        auto
+        0;
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:20px;
+
+    border:1px solid #e6ebef;
+
+    box-shadow:
+        0 12px 35px rgba(15,45,70,.10);
+
+    position:relative;
+
+    z-index:2;
+}
+
+
+/* =========================
+   CHANNEL
+========================= */
+
+.channel{
+    display:flex;
+
+    align-items:center;
+
+    gap:13px;
+}
+
+
+/* logo */
+
+.logo{
+    width:62px;
+    height:62px;
+
+    flex:0 0 62px;
+
+    border-radius:16px;
+
+    overflow:hidden;
+
+    background:#edf6fb;
+
+    border:1px solid #e4ebef;
+}
+
+.logo img{
+    width:100%;
+    height:100%;
+
+    display:block;
+
+    object-fit:cover;
+}
+
+
+/* channel info */
+
+.channel-info{
+    min-width:0;
+}
+
+.channel-name{
+    font-size:18px;
+
+    line-height:1.25;
+
+    font-weight:800;
+
+    color:#142333;
+
+    margin-bottom:5px;
+}
+
+.channel-sub{
+    font-size:11px;
+
+    color:#8a96a0;
+
+    line-height:1.4;
+}
+
+
+/* =========================
+   DIVIDER
+========================= */
+
+.divider{
+    height:1px;
+
+    background:#edf0f2;
+
+    margin:
+        19px
+        0;
+}
+
+
+/* =========================
+   POINTS
+========================= */
+
+.points{
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    margin-bottom:18px;
+}
+
+.point{
+    text-align:center;
+
+    padding:
+        0
+        5px;
+}
+
+.point + .point{
+    border-left:1px solid #edf0f2;
+}
+
+.point-icon{
+    width:32px;
+    height:32px;
+
+    margin:
+        0
+        auto
+        7px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border-radius:10px;
+
+    background:#eef8fd;
+
+    color:#087fc4;
+
+    font-size:14px;
+
+    font-weight:800;
+}
+
+.point strong{
+    display:block;
+
+    font-size:11px;
+
+    color:#243544;
+}
+
+.point small{
+    display:block;
+
+    font-size:9px;
+
+    color:#929ca5;
+
+    margin-top:3px;
+}
+
+
+/* =========================
+   JOIN BUTTON
+========================= */
+
+.join-button{
+    width:100%;
+
+    min-height:55px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:9px;
+
+    border-radius:13px;
+
+    background:#087fc4;
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    font-size:16px;
+
+    font-weight:800;
+
+    box-shadow:
+        0 7px 18px rgba(8,127,196,.18);
+
+    -webkit-tap-highlight-color:transparent;
+}
+
+.join-button:active{
+    transform:scale(.98);
+}
+
+.telegram{
+    width:25px;
+    height:25px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:
+        rgba(255,255,255,.18);
+
+    font-size:13px;
+}
+
+
+/* =========================
+   SMALL NOTE
+========================= */
+
+.note{
+    text-align:center;
+
+    font-size:9px;
+
+    line-height:1.45;
+
+    color:#98a2aa;
+
+    margin-top:9px;
+}
+
+
+/* =========================
+   BOTTOM CONTENT
+========================= */
+
+.bottom{
+    padding:
+        30px
+        20px
+        25px;
+
+    text-align:center;
+}
+
+.bottom-title{
+    font-size:20px;
+
+    font-weight:800;
+
+    color:#152637;
+
+    margin-bottom:8px;
+}
+
+.bottom-text{
+    max-width:360px;
+
+    margin:auto;
+
+    font-size:12px;
+
+    line-height:1.6;
+
+    color:#7d8993;
+}
+
+
+/* =========================
+   DISCLAIMER
+========================= */
+
+.disclaimer{
+    margin:
+        20px
+        0
+        0;
+
+    padding:12px;
+
+    border-radius:11px;
+
+    background:#f6f8fa;
+
+    color:#89949d;
+
+    font-size:9px;
+
+    line-height:1.5;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+    margin-top:auto;
+
+    text-align:center;
+
+    padding:
+        12px
+        15px
+        22px;
+
+    color:#a0a9b0;
+
+    font-size:10px;
+}
+
+
+/* =========================
+   SMALL PHONE
+========================= */
+
+@media(max-width:360px){
+
+    .hero-title{
+        font-size:28px;
+    }
+
+    .top{
+        padding-bottom:60px;
+    }
+
+    .card{
+        padding:17px;
+    }
+
+    .channel-name{
+        font-size:16px;
+    }
+
+    .logo{
+        width:56px;
+        height:56px;
+        flex-basis:56px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="page">
+
+
+<!-- =========================
+     TOP SECTION
+========================= -->
+
+<section class="top">
+
+
+<div class="brand">
+MAXJOHN
+</div>
+
+
+<div class="hero-title">
+
+Stock Market<br>
+
+<span>Community</span>
+
+</div>
+
+
+<p class="hero-text">
+
+Learn the market, follow useful updates
+and access educational resources through
+our Telegram community.
+
+</p>
+
+
+</section>
+
+
+
+<!-- =========================
+     MAIN CARD
+========================= -->
+
+<div class="card">
+
+
+<!-- CHANNEL -->
+
+<div class="channel">
+
+
+<div class="logo">
+
+<img
+src="logo.png"
+alt="Stock Market Logo"
+width="62"
+height="62"
+loading="eager"
+>
+
+</div>
+
+
+<div class="channel-info">
+
+<div class="channel-name">
+Maxjohn Stock Market
+</div>
+
+<div class="channel-sub">
+Telegram Educational Channel
+</div>
+
+</div>
+
+
+</div>
+
+
+<div class="divider"></div>
+
+
+
+<!-- THREE POINTS -->
+
+<div class="points">
+
+
+<div class="point">
+
+<div class="point-icon">
+✓
+</div>
+
+<strong>
+LEARN
+</strong>
+
+<small>
+Education
+</small>
+
+</div>
+
+
+<div class="point">
+
+<div class="point-icon">
+↗
+</div>
+
+<strong>
+UPDATES
+</strong>
+
+<small>
+Market Info
+</small>
+
+</div>
+
+
+<div class="point">
+
+<div class="point-icon">
+✈
+</div>
+
+<strong>
+TELEGRAM
+</strong>
+
+<small>
+Community
+</small>
+
+</div>
+
+
+</div>
+
+
+
+<!-- =========================
+     JOIN BUTTON
+========================= -->
+
+<a
+href="https://t.me/YOUR_TELEGRAM_LINK"
+class="join-button"
+target="_blank"
+rel="noopener noreferrer"
+onclick="fbq('track','Lead');"
+>
+
+<span class="telegram">
+✈
+</span>
+
+Join on Telegram
+
+<span>
+→
+</span>
+
+</a>
+
+
+<div class="note">
+Free access • Educational content
+</div>
+
+
+</div>
+
+
+
+<!-- =========================
+     BOTTOM
+========================= -->
+
+<section class="bottom">
+
+
+<div class="bottom-title">
+Start Learning Today
+</div>
+
+
+<p class="bottom-text">
+
+Join the community and explore
+stock market educational content
+and useful learning resources.
+
+</p>
+
+
+<div class="disclaimer">
+
+For educational and informational purposes only.
+No guaranteed returns or profits are promised.
+Investments are subject to market risks.
+
+</div>
+
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<div class="footer">
+Ads managed by Maxjohn
+</div>
+
+
+</div>
+
+
+</body>
+</html>
